@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(237, 235, 235);
+    color: rgb(26, 26, 26);
+    font-family: sans-serif;
+}
+
+
+nav
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0px 10px 10px lightgray;
+}
+
+a{
+   text-decoration: none;
+    color: initial;
+}
+
+#LogoSection
+{
+    display: flex;
+    align-items: center;
+}
+
+
+#SearchBar
+{
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+
+
+}
+
+#SearchBar input
+{
+    width: 100%;
+    padding: 9px 25px;
+    border-radius: 7px;
+    border: 1px solid rgb(6, 126, 255);
+}
+
+#SearchBar button
+{
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 7px;
+
+}
+
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+nav ul li
+{
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav ul li:hover
+{
+    color: white;
+    padding: 8px 17px;
+    border-radius: 20px;
+    background-color:#fe8700 ;
+}
+
+#Cart
+{
+    background: transparent;
+    padding: 0;
+}
+
+#Cart img{
+    transition: 0.3s;
+    height: 2.5rem;
+    margin-left: 2rem;
+}
+
+#Cart img:hover
+{
+    transform: scale(1.2)rotate(-10deg);
+}
+
+
+main
+{
+    position: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    min-height: 100vh;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    column-gap: .5rem;
+    row-gap: .5rem;
+
+}
+
+
+.ProductCard
+{
+    height: 500px;
+    min-width: 450px;
+    background-color: rgb(237, 235, 235);
+    overflow: hidden;
+}
+
+.ProductCard img
+{
+    height: 60%;
+    object-fit: cover;
+}
